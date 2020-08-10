@@ -16,7 +16,7 @@ The feature pyramid as a valid representation has been widely used in many visua
 | Two-Stream I3D[4]        | 80.2   | 97.9   |
 | PoTion + I3D[5]          | 80.9   | 98.2   |
 | FSNet(RGB, ours)         | 81.4   | 98.3   |
-| FSNet(RGB)+I3D           | 84.8   | 98.9   |
+| FSNet(RGB)+I3D(Flow)     | 84.8   | 98.9   |
 
 ## References
 
