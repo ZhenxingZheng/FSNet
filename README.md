@@ -4,7 +4,7 @@ The feature pyramid as a valid representation has been widely used in many visua
 
 
 
-## Comparison with State-of-the-art methods
+## Comparison with state-of-the-art methods
 
 
 
