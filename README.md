@@ -6,15 +6,15 @@ The feature pyramid as a valid representation has been widely used in many visua
 
 ## Comparison with state-of-the-art methods
 
-| Model                      | HMDB51 | UCF101 |
-| -------------------------- | ------ | ------ |
-| TEA-ResNet50               | 73.3   | 96.9   |
-| Dense Dilated Network      | 74.5   | 96.9   |
-| S3D-G                      | 78.2   | 96.8   |
-| MARS+RGB                   | 79.5   | 97.6   |
-| Two-Stream I3D             | 80.2   | 97.9   |
-| PoTion + I3D               | 80.9   | 98.2   |
-| FSNet(RGB)+I3D(Flow), ours | 84.8   | 98.9   |
+| Model                    | HMDB51 | UCF101 |
+| ------------------------ | ------ | ------ |
+| TEA-ResNet50[1]          | 73.3   | 96.9   |
+| Dense Dilated Network[2] | 74.5   | 96.9   |
+| MARS+RGB[3]              | 79.5   | 97.6   |
+| Two-Stream I3D[4]        | 80.2   | 97.9   |
+| PoTion + I3D[5]          | 80.9   | 98.2   |
+| FSNet(RGB, ours)         | 81.4   | 98.3   |
+| FSNet(RGB)+I3D(Flow)     | 84.8   | 98.9   |
 
 
 ## References
