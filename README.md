@@ -14,7 +14,7 @@ opencv-python
 
 The datasets and splits can be downloaded from
 
-[Kinetics-600](https://deepmind.com/research/open-source/open-source-datasets/kinetics/)
+[Kinetics-400](https://deepmind.com/research/open-source/open-source-datasets/kinetics/)
 
 [UCF101](https://www.crcv.ucf.edu/data/UCF101.php)
 
