@@ -1,7 +1,27 @@
 # Collaborative and Hierarchical Feature Selection Network for Action Recognition
 
-The feature pyramid as a valid representation has been widely used in many visual tasks, such as fine-grained image classification, instance segmentation, and object detection, achieving promising performance. Although many algorithms exploit different-scale features to construct the feature pyramid, they usually treat them equally and do not make an in-depth exploration of the inherent complementary advantages of hierarchical features. In this paper, to learn a pyramid feature with the robust representational ability for action recognition, we propose a novel collaborative and hierarchical Feature Selection Network (FSNet) which applies feature selection and aggregation on hierarchical features according to action context. Unlike previous works that learn the appearance pattern of frames by enhancing spatial encoding, the proposed network consists of two core modules, the position selection module and channel selection module, to adaptively integrate multi-scale features into a new informative feature from both position and channel dimensions. The position selection module pools the vectors at the same spatial location across multi-scale features with position-wise attention. Similarly, the channel selection module selectively aggregates the channel maps at the same channel location across multi-scale features with channel-wise attention. Position-wise information with different receptive fields and channel-wise information with different pattern-specific responses are emphasized depending on their correlations to actions and thereafter are fused as a new informative feature for action recognition. We demonstrate that position and channel information could be collaboratively learned to boost the representational power of the proposed network. Extensive experiments are conducted on three benchmark action datasets, Kinetics, UCF101, and HMDB51. Experimental results show that the position selection module and channel selection module are practical, and FSNet can achieve superior performance against most state-of-the art models.
+**Abstract:** The feature pyramid as a valid representation has been widely used in many visual tasks, such as fine-grained image classification, instance segmentation, and object detection, achieving promising performance. Although many algorithms exploit different-scale features to construct the feature pyramid, they usually treat them equally and do not make an in-depth exploration of the inherent complementary advantages of different-level features. In this paper, to learn a pyramid feature with the robust representational ability for action recognition, we propose a novel collaborative and multi-level Feature Selection Network (FSNet) that applies feature selection and aggregation on multi-level features according to action context. Unlike previous works that learn the appearance pattern of frames by enhancing spatial encoding, the proposed network consists of two core modules, the position selection module and channel selection module, to adaptively integrate multi-level features into a new informative feature from both position and channel dimensions. The position selection module pools the vectors at the same spatial location across multi-level features with position-wise attention. Similarly, the channel selection module selectively aggregates the channel maps at the same channel location across multi-level features with channel-wise attention. Position-wise information with different receptive fields and channel-wise information with different pattern-specific responses are emphasized depending on their correlations to actions and thereafter are fused as a new informative feature for action recognition. The proposed FSNet can be integrated into 2D and 3D backbone networks flexibly and extensive experiments are conducted on three benchmark action datasets, Kinetics, UCF101, and HMDB51. Experimental results show that FSNet is practical and can be collaboratively learned to boost the representational power of existing networks. FSNet achieves superior performance against most top-tier models on Kinetics and all methods on UCF101 and HMDB51 respectively.
 
+
+## Requirements
+
+PyTorch 0.4.1
+
+opencv-python
+
+
+## Datasets
+
+The datasets and splits can be downloaded from
+
+[Kinetics-600](https://deepmind.com/research/open-source/open-source-datasets/kinetics/)
+
+[UCF101](https://www.crcv.ucf.edu/data/UCF101.php)
+
+[HMDB51](http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads)
+
+## Models
+The pretrained models on Kinetics can be downloaded from [Baidu Yun](https://pan.baidu.com/s/1VhXSlWOYtZeku1LzcQq1gg), code:o4ib.
 
 
 ## Comparison with state-of-the-art methods
@@ -29,3 +49,6 @@ The feature pyramid as a valid representation has been widely used in many visua
 
 [5] V. Choutas, P. Weinzaepfel, J. Revaud, and C. Schmid, “PoTion: Pose MoTion representation for action recognition,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit., 2018, pp. 7024–7033.
 
+
+## Comming Soon
+More details will be released.
